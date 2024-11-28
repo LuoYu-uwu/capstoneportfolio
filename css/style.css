@@ -5,13 +5,13 @@ body {
 
 
 header{
-    background-color:rgb(233, 233, 233);
-    background-image: url('../images/listen_music.jpg');
-    height: 300px;
+    background-color:pink;
+    /* background-image: url('../images/listen_music.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    position:relative;
+    background-repeat: no-repeat; */
+    /* height: 300px; */
+    /* position:static; */
 }
 
 footer {
@@ -20,11 +20,12 @@ footer {
 }
 
 nav {
-    background-color: pink;
-    display: block;
-    width: 100%;
-    position: fixed;
-    top:0;
+    /* background-color: pink; */
+    /* display: block; */
+    /* width: 100%; */
+    /* position: static; */
+    /* top:0; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 nav a:hover {
@@ -33,9 +34,22 @@ nav a:hover {
 
 
 nav ul{
-    text-align: center;
+    /* text-align: center; */
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    list-style-type:none;
+    border-style: solid;
+    border:2px solid block;
+    font-size: 150%;
+}
+
+nav ul li {
+    /* display:inline-block; */
+    margin:15px 15px 15px -25px;
+    padding: 15px;
+    /* font-size: 20px; */
+    border-style: outset;
 }
 
 
@@ -101,6 +115,7 @@ div img {
 main {
     background-color: rgb(255, 254, 212);
     font-size: 110%;
+    position: relative;
 }
 
 #homeimg {
@@ -111,24 +126,20 @@ main {
     border-radius: 6px;
 }
 
-nav li {
-    display:inline-block;
-    font-size: 20px;
-    border-style: outset;
-}
 
 h1 {
     text-align: center;
     font-family: cursive;
     color: rgb(6, 33, 209);
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
+    /* position: relative;
     text-align: center;
     background-color: white;
     border-color: black;
     border-style: dashed;
     border-width: medium;
-    border-radius: 6px;
+    border-radius: 6px; */
 }
 
 p { 
