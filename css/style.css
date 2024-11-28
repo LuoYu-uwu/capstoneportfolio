@@ -96,12 +96,6 @@ h3 ul li {
     border-width: 4px;
 }
 
-.flex_class {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 
 a {
     font-style: italic;
@@ -184,18 +178,28 @@ header>a:focus{
         width: 55vh;
     }
 
+    .grid_class {
+        grid-template-columns:40% 40%;
+    }
+
+    .gallery-lightbox-item-src {
+        max-width: 30vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
     .grid_class div {
         font-size: 0px;
         opacity: 20%
+    }
+
+    .grid_class {
+        grid-template-columns:25% 25% 25%;
     }
     
     .grid_class div:hover {
         opacity: 100%;
         font-size:100%;
-    }
-
-    .grid_class {
-        grid-template-columns:25% 25% 25%;
     }
 }
 
