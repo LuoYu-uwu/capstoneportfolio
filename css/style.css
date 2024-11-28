@@ -42,8 +42,9 @@ nav ul li {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-h3 ul li {
+div>ul>li {
     padding: 1vh;
+    font-size: 130%;
 }
 
 
