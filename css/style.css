@@ -117,6 +117,16 @@ main {
     border-radius: 6px;
 }
 
+#jump {
+    /* margin-left: 1vw;
+    padding: 0.5vw; */
+    position: absolute;
+    left: 1vw;
+    border-radius: 6px;
+    background-color: white;
+    border-style: dotted;
+}
+
 
 h1 {
     text-align: center;
