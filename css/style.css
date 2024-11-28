@@ -1,6 +1,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%；
+    font-size: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 
@@ -36,6 +39,7 @@ nav ul li {
     margin:15px 15px 15px -25px;
     padding: 15px;
     border-style: outset;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -87,6 +91,7 @@ nav ul li {
     justify-content: space-around;
 }
 
+
 a {
     font-style: italic;
 }
@@ -100,7 +105,7 @@ div img {
 
 main {
     background-color: rgb(255, 254, 212);
-    font-size: 110%;
+    font-size: 130%;
     position: relative;
 }
 
@@ -121,6 +126,7 @@ h1 {
 
 p { 
     line-height: 150%;
+    font-size: 130%;
 }
 
 .offpage {
@@ -130,6 +136,32 @@ p {
 
 header>a:focus{
     left: 10px;
+}
+
+.floating_box {
+    margin-top: 2vh;
+}
+
+#intro {
+    padding: 1vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#funfacts {
+    margin-left: 1vw;
+    margin-bottom: 2vh;
+}
+
+@media screen and (min-width: 780px){
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .floating_box {
+        float: right;
+        width: 55vh;
+    }
 }
 
 
