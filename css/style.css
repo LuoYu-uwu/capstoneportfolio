@@ -42,10 +42,14 @@ nav ul li {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+h3 ul li {
+    padding: 1vh;
+}
+
 
 .grid_class {
     display: grid;
-    grid-template-columns:25% 25% 25%;
+    grid-template-columns:80%;
     justify-content: space-around;
     align-items: center;
     row-gap: 20px;
@@ -55,19 +59,26 @@ nav ul li {
     width: 100%;
 }
 
-.grid_class div {
+/* .grid_class div {
     top: 50%;
     width: 100%;
     text-align: center;
     font-size: 0px;
     font-family: fantasy;
     opacity: 20%
-}
+} */
 
-.grid_class div:hover {
+.grid_class div {
+    text-align: center;
+    font-family: fantasy;
     opacity: 100%;
     font-size:100%;
 }
+
+/* .grid_class div:hover {
+    opacity: 100%;
+    font-size:100%;
+} */
 
 .grid_class div:first-child img, .grid_class div:last-child img{
     border-style: solid;
@@ -171,6 +182,20 @@ header>a:focus{
     .floating_box {
         float: right;
         width: 55vh;
+    }
+
+    .grid_class div {
+        font-size: 0px;
+        opacity: 20%
+    }
+    
+    .grid_class div:hover {
+        opacity: 100%;
+        font-size:100%;
+    }
+
+    .grid_class {
+        grid-template-columns:25% 25% 25%;
     }
 }
 
