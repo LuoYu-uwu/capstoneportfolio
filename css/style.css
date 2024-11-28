@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%；
+}
+
+
+header{
+    background-color:rgb(233, 233, 233);
+    background-image: url('../images/listen_music.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+footer {
+    background-color:rgb(233, 233, 233);
+    text-align: center;
+}
+
+nav {
+    background-color: pink;
+    display: block;
+    width: 100%;
+    position: fixed;
+    top:0;
+}
+
+nav a:hover {
+    background-color: lightgray;
+}
+
+
+nav ul{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.grid_class {
+    display: grid;
+    grid-template-columns:25% 25% 25%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.grid_class img {
+    width: 100%;
+}
+
+.grid_class div {
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 0px;
+    font-family: fantasy;
+    opacity: 20%
+}
+
+.grid_class div:hover {
+    opacity: 100%;
+    font-size:100%;
+}
+
+.grid_class div:first-child img, .grid_class div:last-child img{
+    border-style: solid;
+    border-color: rgb(37, 37, 210);
+    padding:2px;
+    border-radius: 6px;
+    border-width: 4px;
+}
+
+.grid_class div:not(:first-child):not(:last-child) img{
+    border-style: solid;
+    border-color: rgb(217, 91, 133);
+    padding:2px;
+    border-radius: 6px;
+    border-width: 4px;
+}
+
+.flex_class {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+a {
+    font-style: italic;
+}
+
+div img {
+    border-style: ridge;
+    padding:5px;
+    border-radius: 3px;
+    border-width: 4px;
+}
+
+main {
+    background-color: rgb(255, 254, 212);
+    font-size: 110%;
+}
+
+#homeimg {
+    display: block;
+    margin: 0 auto;
+    border-style: dashed;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+nav li {
+    display:inline-block;
+    font-size: 20px;
+    border-style: outset;
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+    color: rgb(6, 33, 209);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: white;
+    border-color: black;
+    border-style: dashed;
+    border-width: medium;
+    border-radius: 6px;
+}
+
+p { 
+    line-height: 150%;
+}
+
+.offpage {
+    position: absolute;
+    left: -500px;
+}
+
+header>a:focus{
+    left: 10px;
+}
+
+
+
+
